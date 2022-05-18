@@ -4,4 +4,4 @@ Learn about the basics of HTML forms by reading Mozilla's tutorial [Your first f
 
 *This exercise is not submitted to GitHub, it's enough to just read the tutorial*
 
-- [ ] Complete: *Insert completetion datetime*
+- [x] Complete

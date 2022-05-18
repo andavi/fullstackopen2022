@@ -4,4 +4,4 @@ Review the basics of HTML by reading this tutorial from Mozilla: [HTML tutorial]
 
 *This exercise is not submitted to GitHub, it's enough to just read the tutorial*
 
-- [x] Complete: *Tue May 10 16:15:23 PDT 2022*
+- [x] Complete
