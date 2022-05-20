@@ -1,14 +1,14 @@
 # [Full Stack open 2022](https://fullstackopen.com/en/)
 
-### Deep Dive Into MOdern Web Developmemt
+## Deep Dive Into MOdern Web Developmemt
 
-Generously opened up to the public from University of Helsinki :ty
+:pray: Generously opened up *freely* to the public from University of Helsinki
 
 ----
 
-## Some course informations
+### Submitting Exercises
 
-- And very functional file structure for the submission repo is:
+Here is an example of a very functional file structure for the submission repo:
 
 ```txt
 part0
@@ -23,3 +23,6 @@ part2
 
 See the [example submission repo](https://github.com/fullstack-hy2020/example-submission-repository)
 
+---
+
+*Thank You :finland:*

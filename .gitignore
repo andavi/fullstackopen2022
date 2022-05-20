@@ -205,9 +205,5 @@ dist
 ######################################################
 # Andrew's additional untracked
 
-# I prefix the folders used in the lessons
-# with an underscore since they're just for my reference
-# and I want to name the part1 project part1 but
-# we did that for the lesson so I don't want to get too
-# creative - hopefully this works 
-._part*/
+# Extra stuff not needed for submission
+.resources/
