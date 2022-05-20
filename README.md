@@ -4,6 +4,8 @@
 
 :pray: Generously opened up *freely* to the public from University of Helsinki
 
+<https://fullstackopen.com/en/>
+
 ----
 
 ### Submitting Exercises
@@ -18,11 +20,11 @@ part1
   anecdotes
 part2
   phonebook
-  countries
+  countriesq
 ```
 
 See the [example submission repo](https://github.com/fullstack-hy2020/example-submission-repository)
 
----
+----
 
 *Thank You :finland:*
