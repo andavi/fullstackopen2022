@@ -1,6 +1,6 @@
 # [Full Stack open 2022](https://fullstackopen.com/en/)
 
-## Deep Dive Into MOdern Web Developmemt
+## Deep Dive Into Modern Web Developmemt
 
 :pray: Generously opened up *freely* to the public from University of Helsinki
 
