@@ -1,10 +1,12 @@
 # [Full Stack open 2022](https://fullstackopen.com/en/)
 
-## Deep Dive Into Modern Web Developmemt
-
-:pray: Generously opened up *freely* to the public from University of Helsinki
+**`{() => fs}`**
 
 <https://fullstackopen.com/en/>
+
+## A Deep Dive Into Modern Web Developmemt
+
+:pray: Generously opened up *freely* to the public from the University of Helsinki
 
 ----
 
@@ -20,7 +22,7 @@ part1
   anecdotes
 part2
   phonebook
-  countriesq
+  countries
 ```
 
 See the [example submission repo](https://github.com/fullstack-hy2020/example-submission-repository)
