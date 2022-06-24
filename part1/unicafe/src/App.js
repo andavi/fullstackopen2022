@@ -3,7 +3,15 @@ import { useState } from 'react'
 const StatisticLine = (props) => {
   const {text, value, posttext} = props
   return (
-    <p>{text} {value} {posttext}</p>
+    // <p>{text} {value} {posttext}</p>
+    <tr>
+      <td>
+        {text}
+      </td>
+      <td>
+        {value} {posttext}
+      </td>
+    </tr>
   )
 }
 
@@ -56,13 +64,13 @@ const App = () => {
   }
 
   return (
-    <div>
+    <>
       <h1>give feedback</h1>
       <Button handleClick={handleGoodClick} text="good" />
       <Button handleClick={handleNeutralClick} text="neutral" />
       <Button handleClick={handleBadClick} text="bad" />
       <Statistics good={good} neutral={neutral} bad={bad} />
-    </div>
+    </>
   )
 }
 
