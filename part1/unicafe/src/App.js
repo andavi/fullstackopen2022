@@ -28,12 +28,17 @@ const Statistics = (props) => {
   return (
     <>
       <h1>statistics</h1>
-      <StatisticLine text="good" value={good} />
-      <StatisticLine text="neutral" value={neutral} />
-      <StatisticLine text="bad" value={bad} />
-      <StatisticLine text="all" value={good + neutral + bad} />
-      <StatisticLine text="average" value={(good - bad) / (good + neutral + bad)} />
-      <StatisticLine text="positive" value={(good/(good + bad + neutral)) * 100} posttext="%" />
+      <table>
+        <tbody>
+
+          <StatisticLine text="good" value={good} />
+          <StatisticLine text="neutral" value={neutral} />
+          <StatisticLine text="bad" value={bad} />
+          <StatisticLine text="all" value={good + neutral + bad} />
+          <StatisticLine text="average" value={(good - bad) / (good + neutral + bad)} />
+          <StatisticLine text="positive" value={(good/(good + bad + neutral)) * 100} posttext="%" />
+        </tbody>
+      </table>
     </>
   )
 }
@@ -64,13 +69,13 @@ const App = () => {
   }
 
   return (
-    <>
+    <div>
       <h1>give feedback</h1>
       <Button handleClick={handleGoodClick} text="good" />
       <Button handleClick={handleNeutralClick} text="neutral" />
       <Button handleClick={handleBadClick} text="bad" />
       <Statistics good={good} neutral={neutral} bad={bad} />
-    </>
+    </div>
   )
 }
 
