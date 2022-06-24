@@ -1,5 +1,12 @@
 import { useState } from 'react'
 
+const StatisticLine = (props) => {
+  const {text, value, posttext} = props
+  return (
+    <p>{text} {value} {posttext}</p>
+  )
+}
+
 const Statistics = (props) => {
   const { good, neutral, bad } = props
   if (good + neutral + bad === 0) {
@@ -13,15 +20,22 @@ const Statistics = (props) => {
   return (
     <>
       <h1>statistics</h1>
-      <p>good {good}</p>
-      <p>neutral {neutral}</p>
-      <p>bad {bad}</p>
-      <p>all {good + neutral + bad}</p>
-      <p>average {(good - bad) / (good + neutral + bad)}</p>
-      <p>positive {(good/(good + bad + neutral)) * 100}%</p>
+      <StatisticLine text="good" value={good} />
+      <StatisticLine text="neutral" value={neutral} />
+      <StatisticLine text="bad" value={bad} />
+      <StatisticLine text="all" value={good + neutral + bad} />
+      <StatisticLine text="average" value={(good - bad) / (good + neutral + bad)} />
+      <StatisticLine text="positive" value={(good/(good + bad + neutral)) * 100} posttext="%" />
     </>
   )
 }
+
+const Button = ({ handleClick, text }) => (
+  <button onClick={handleClick}>
+    {text}
+  </button>
+)
+
 
 const App = () => {
   // save clicks of each button to its own state
@@ -29,12 +43,24 @@ const App = () => {
   const [neutral, setNeutral] = useState(0)
   const [bad, setBad] = useState(0)
 
+  const handleGoodClick = () => {
+    setGood(good + 1)
+  }
+
+  const handleNeutralClick = () => {
+    setNeutral(neutral + 1)
+  }
+
+  const handleBadClick = () => {
+    setBad(bad + 1)
+  }
+
   return (
     <div>
       <h1>give feedback</h1>
-      <button onClick={() => setGood(good + 1)}>good</button>
-      <button onClick={() => setNeutral(neutral + 1)}>neutral</button>
-      <button onClick={() => setBad(bad + 1)}>bad</button>
+      <Button handleClick={handleGoodClick} text="good" />
+      <Button handleClick={handleNeutralClick} text="neutral" />
+      <Button handleClick={handleBadClick} text="bad" />
       <Statistics good={good} neutral={neutral} bad={bad} />
     </div>
   )
